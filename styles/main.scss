@@ -1,4 +1,32 @@
 // main scss file
 
+// variables
+
+$font-size: 16px;
+$font-color: #444444;
+
+$header-bg: #ffffff;
+
+$x-large: 1200px;
+$large: 768px;
+$medium: 460px;
+$small: 320px;
+
+@mixin link {
+  color: orange;
+  text-decoration: none;
+  &:hover {
+    color: green;
+    text-decoration: underline;
+  }
+}
+// a {@include link;}
+
+// parts
+
 @import '_01-reset.scss';
 @import '_02-base.scss';
+@import '_03-typo.scss';
+@import '_04-layout.scss';
+@import '_05-navigation.scss';
+@import '_06-components.scss';
