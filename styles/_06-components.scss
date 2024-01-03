@@ -1,1 +1,35 @@
 // components
+
+// button
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.btn {
+  @include button-reset;
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+  background-color: $btn-bg;
+  color: $btn-text;
+  & a {color: $btn-text;}
+  
+  &:hover {
+    background-color: $btn-bg-hover;
+    color: $btn-text-hover;
+    & a{color: $btn-text-hover;}
+  }
+  
+}
