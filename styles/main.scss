@@ -1,16 +1,24 @@
-// main scss file
+// MAIN SCSS FILE
 
-// variables
+// VARIABLES
+
+// typo
 
 $font-size: 16px;
 $font-color: #444444;
 
+// header
+
 $header-bg: #ffffff;
+
+// breakpoints
 
 $x-large: 1200px;
 $large: 768px;
 $medium: 460px;
 $small: 320px;
+
+// links
 
 @mixin link {
   color: orange;
@@ -21,6 +29,14 @@ $small: 320px;
   }
 }
 // a {@include link;}
+
+// buttons
+$btn-text: orange;
+$btn-text-hover: green;
+$btn-bg: green;
+$btn-bg-hover: orange;
+$btn-radius: 10px;
+$btn-padding: 0.5rem 1rem 0.5rem 1rem;
 
 // parts
 
