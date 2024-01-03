@@ -1,14 +1,14 @@
-// body
+// base
+
+html {
+    font-size: $font-size;
+}
 
 body {
     font-family: 'Nunito', sans-serif;
-}
-
-/* */
-
-/* layouts */
-
-body {
+    font-size: 1rem;
+    color: $font-color;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
